@@ -4,6 +4,7 @@
 ##
 green=$'\e[32m'
 blue=$'\e[34m'
+red=$'\e[31m'
 clear=$'\e[0m'
 
 ##
@@ -74,7 +75,7 @@ function menu(){
             4) check_kernel_version ; menu ;;
             5) memoryCheck ; menu ;;
                 0) exit 0 ;;
-                *) echo -e $red"Wrong option."$clear; WrongCommand;;
+                *) echo -e ${red}'Wrong Choice'${clear}; ;;
                 esac
 
 }
